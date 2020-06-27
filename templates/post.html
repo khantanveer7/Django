@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{blogs.title}}
+{% endblock title %}
+{% block blogActive %}active
+{% endblock blogActive %}
+
+{% block body %}
+<div class="container">
+<div>
+<h1>
+{{blogs.title}}
+</h1>
+</div>
+{{blogs.content|safe}}
+</div>
+
+
+</div>
+{% endblock body %}
