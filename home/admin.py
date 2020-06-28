@@ -13,6 +13,7 @@ from home.models import Contact , Blog
 
 #         js = ("JS/blog.js,")
 
+
 admin.site.register(Contact)
 
 admin.site.register(Blog)

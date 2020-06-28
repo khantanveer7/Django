@@ -12,7 +12,10 @@ class Blog(models.Model):
     meta = models.TextField()
     thumbnail = models.TextField()
     ImgAlt = models.CharField(max_length = 200)
-    published = models.BooleanField(default=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_on']
     
 
     def __str__(self):
